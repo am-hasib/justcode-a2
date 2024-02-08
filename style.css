@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+.topbar_area {
+  background: #020617;
+}
+.navbar {
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo {
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.highlight {
+  color: #eab308;
+}
+.menu {
+  display: flex;
+  gap: 27px;
+}
+.menu_item {
+  list-style: none;
+}
+.menu_item a {
+  text-decoration: none;
+  color: #9ca3af;
+  font-weight: normal;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.menu_item a:hover,
+.menu_item a:active {
+  color: #fff;
+}
+.hero_area {
+  padding: 96px 0px;
+  background: #111827;
+}
+.hero,
+.aboutme {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero_info,
+.aboutme_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
+.hero_info span,
+.aboutme_info span {
+  color: #eab308;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 27px;
+}
+.hero_info h3,
+.aboutme_info h3 {
+  font-size: 42px;
+  color: #f3f4f6;
+  line-height: 64px;
+}
+.hero_info p,
+.aboutme_info p {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 27px;
+  max-width: 75%;
+}
+.hero_info button,
+.aboutme_info button,
+.contactme_form button {
+  background: #facc15;
+  font-weight: normal;
+  font-size: 16px;
+  height: 43px;
+  width: 123px;
+  border: none;
+  border-radius: 4px;
+}
+.hero_photo img,
+.aboutme_photo img {
+  height: 427px;
+  width: 427px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.aboutme_area {
+  padding: 96px 0px;
+  background: #020617;
+}
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 90px;
+}
+.aboutme_photo {
+  flex: 1;
+  height: 475px;
+  width: 475px;
+  object-fit: cover;
+}
+.aboutme_photo .emptydiv {
+  border: 16px solid #facc15;
+  border-radius: 12px;
+  height: 440px;
+  width: 440px;
+  position: relative;
+}
+
+.aboutme_photo img {
+  position: absolute;
+  top: -30px;
+  left:40px;
+}
+.aboutme_info {
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.service_area {
+  background: #111827;
+}
+.service {
+  padding: 96px 0px;
+}
+.service_header {
+  max-width: 45%;
+}
+.service_header h3,
+.portfolio_header h3 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 24px;
+}
+
+.service_header p {
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: normal;
+  line-height: 27px;
+  margin-bottom: 56px;
+}
+.service_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.single_item {
+  background: #020617;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.single_item img {
+  width: 40px;
+}
+.single_item h3 {
+  color: #f3f4f6;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 41px;
+}
+.single_item p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 27px;
+}
+.portfolio_area {
+  background: #020617;
+  padding: 96px 0px;
+}
+.portfolio {
+  text-align: center;
+}
+.portfolio_header p {
+  width: 45%;
+  color: #f3f4f6;
+  font-weight: normal;
+  line-height: 27px;
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+.portfolio_gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 268px);
+  grid-gap: 30px;
+  width: 100%;
+}
+.gallery_item {
+  border-radius: 12px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.gallery_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item_1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.item_2 {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.experience_header p {
+  width: 100%;
+}
+.experience_list {
+}
+.experience_item {
+  color: #d1d5db;
+  text-align: left;
+  align-items: start;
+  gap: 5px;
+}
+.experience_item p {
+  color: #d1d5db;
+}
+.experience_item h3 {
+  color: #eab308;
+}
+.experience_item h3 + p {
+  margin-bottom: 30px;
+}
+.contactme_area {
+  background: #020617;
+  text-align: center;
+  padding: 96px 0px;
+}
+.contactme_details {
+  display: flex;
+  align-items: center;
+}
+.contactme_area p {
+  width: 60%;
+}
+.contactme_address {
+  line-height: 30px;
+  width: 55%;
+  text-align: left;
+  color: #d1d5db;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.fontbold {
+  font-weight: bold;
+}
+
+.contactme_form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+.contactme_form input,
+.contactme_form textarea {
+  width: 60%;
+  outline: none;
+  border: none;
+  padding: 11px 15px;
+  color: #f3f4f6;
+  background: #111827;
+  line-height: 41px;
+}
+.contactme_form textarea {
+  width: 100%;
+  height: 166px;
+}
+.contactme_form button {
+}
+.footer_area {
+  background: #020617;
+  padding: 96px 0px;
+  color: #9ca3af;
+  font-weight: normal;
+
+  text-align: center;
+}
+.footer h3 {
+  color: white;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.footer p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 27px;
+}
+.socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 54px;
+}
+.socialLinks li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.socialItem {
+  height: 24px;
+  width: 24px;
+}
+
+.socialItem img {
+  height: 100%;
+  width: 100%;
+}
+
+.facebook:hover {
+  content: url("./img/facebookYellow.svg");
+}
+.twitter:hover {
+  content: url("./img/twitterYellow.svg");
+}
+.instagram:hover {
+  content: url("./img/instagramYellow.svg");
+}
+.linkedin:hover {
+  content: url("./img/linkedinYellow.svg");
+}
+.pinterest:hover {
+  content: url("./img/pinterestYellow.svg");
+}
+.youtube:hover {
+  content: url("./img/youtubeYellow.svg");
+}
